@@ -1,0 +1,14 @@
+int  SENSOR_PIN_1 = A0
+;
+void setup()
+{
+ Serial.begin(5000);
+}
+ 
+/* Main loop */
+void loop()
+{
+  Serial.print("Sensor 1: ");
+  Serial.println(analogRead(SENSOR_PIN_1));
+  delay(3000);
+}
